@@ -1,0 +1,27 @@
+footer {
+    background-color: #0B1C32;
+    color: #ffffff;
+    padding: 40px 0;
+}
+
+footer h5 {
+    color: #00A1E0;
+    /* Azul claro del logo */
+    margin-bottom: 15px;
+}
+
+footer p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+footer .phone {
+    color: #FF7A00;
+    /* naranja del logo */
+    font-weight: 600;
+}
+
+footer .schedule {
+    color: #7AB800;
+    /* verde del logo */
+}

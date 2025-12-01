@@ -1,0 +1,22 @@
+:root {
+    /* Colores principales corporativos */
+    --color-primary: #3590C9;
+    /* Azul corporativo fuerte */
+    --color-primary-light: #ADCEDC;
+    /* Azul claro */
+
+    --color-accent: #D19446;
+    /* Naranja */
+    --color-green-eye: #8CC63F;
+    /* Verde del iris */
+
+    /* Colores neutrales */
+    --color-dark: #000000;
+    --color-light: #ffffff;
+
+    /* Tipografía */
+    --font-main: "Roboto", sans-serif;
+
+    /* Sombras */
+    --shadow-soft: 0 2px 8px rgba(0, 0, 0, 0.10);
+}

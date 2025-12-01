@@ -1,0 +1,114 @@
+/* ===== PALETA CORPORATIVA ===== */
+:root {
+  --sorco-blue: #0095d9;
+  --sorco-orange: #f47b20;
+  --sorco-green: #8dc640;
+
+  --color-dark: #1f1f1f;
+  --color-light: #ffffff;
+  --shadow-nav: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== NAVBAR GENERAL ===== */
+.nav-container {
+  width: 100%;
+  background: var(--color-light);
+  box-shadow: var(--shadow-nav);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.nav-content {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ===== LOGO ===== */
+.nav-logo img {
+  height: 55px;
+  width: auto;
+}
+
+/* ===== NAV LINKS DESKTOP ===== */
+.nav-links {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: var(--color-dark);
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: var(--sorco-orange);
+}
+
+/* ===== HAMBURGER MENU ===== */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 28px;
+  height: 3px;
+  background: var(--color-dark);
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+/* ===== ANIMACIÓN DE X ===== */
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translateY(8px);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-8px);
+}
+
+/* ===== RESPONSIVE MENU ===== */
+@media (max-width: 900px) {
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: var(--color-light);
+    flex-direction: column;
+    width: 250px;
+    padding: 20px;
+    gap: 20px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(100%);
+    transition: 0.3s ease;
+    box-shadow: -3px 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links.active {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: all;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}

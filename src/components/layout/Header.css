@@ -1,0 +1,66 @@
+.header {
+    width: 100%;
+    background: var(--color-light);
+    box-shadow: var(--shadow-soft);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.header-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 12px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-img {
+    height: 55px;
+    width: auto;
+}
+
+.logo-text {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-primary);
+    letter-spacing: 0.5px;
+}
+
+.nav {
+    display: flex;
+    gap: 25px;
+}
+
+.nav a {
+    font-size: 15px;
+    color: var(--color-dark);
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+/* HOVER corporativo */
+.nav a:hover {
+    color: var(--color-accent);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .logo-text {
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    .nav {
+        display: none;
+    }
+}
