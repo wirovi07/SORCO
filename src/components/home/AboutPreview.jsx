@@ -1,17 +1,46 @@
 import React from "react";
+import "./AboutPreview.css";
 
 export default function AboutPreview() {
     return (
-        <section className="py-5" style={{ background: "#f9fafc" }}>
+        <section className="about-preview py-5">
             <div className="container">
-                <h2 className="text-center mb-4" style={{ color: "#0074b8" }}>
-                    Sobre Nosotros
-                </h2>
+                <div className="row align-items-center">
 
-                <p className="text-center">
-                    Somos la Sociedad Regional de Cirugía Ocular, especialistas en salud visual,
-                    brindando servicios oftalmológicos de alta calidad con tecnología avanzada.
-                </p>
+                    {/* Imagen */}
+                    <div className="col-md-6 mb-4 mb-md-0 d-flex justify-content-center">
+                        <div className="about-img-wrapper shadow-lg">
+                            <img
+                                src="/images/facilities/cristian.jpeg"
+                                alt="Instalaciones SORCO"
+                                className="img-fluid about-img"
+                            />
+                        </div>
+                    </div>
+
+                    {/* Texto */}
+                    <div className="col-md-6">
+                        <h2 className="section-title">Sobre Nosotros</h2>
+                        <div className="divider"></div>
+
+                        <p className="lead mt-3">
+                            En la Sociedad Regional de Cirugía Ocular — SORCO, contamos con
+                            más de <strong>20 años de experiencia</strong> cuidando la salud visual
+                            de nuestros pacientes mediante tecnología avanzada y un equipo
+                            médico altamente especializado.
+                        </p>
+
+                        <p className="mt-3">
+                            Nuestro compromiso es brindar un servicio seguro, humano y ético,
+                            garantizando diagnósticos precisos y tratamientos oportunos.
+                        </p>
+
+                        <a href="/about" className="btn about-btn px-4 mt-4 fw-bold">
+                            Conocer Más
+                        </a>
+                    </div>
+
+                </div>
             </div>
         </section>
     );
