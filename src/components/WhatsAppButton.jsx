@@ -1,0 +1,16 @@
+import React from "react";
+import { FaWhatsapp } from "react-icons/fa";
+import "./WhatsAppButton.css";
+
+export default function WhatsAppButton() {
+    return (
+        <a
+            href="https://wa.me/573102460681"
+            className="whatsapp-float"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <FaWhatsapp size={32} />
+        </a>
+    );
+}

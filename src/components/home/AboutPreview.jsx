@@ -19,7 +19,7 @@ export default function AboutPreview() {
                     </div>
 
                     {/* Texto */}
-                    <div className="col-md-6">
+                    <div className="col-md-6 text-content">
                         <h2 className="section-title">Sobre Nosotros</h2>
                         <div className="divider"></div>
 

@@ -4,8 +4,7 @@ import "./HeroSection.css";
 export default function HeroSection() {
     const images = [
         "/images/hero/0.jpg",
-        "/images/hero/1.jpg",
-        "/images/hero/2.jpeg"
+        "/images/hero/1.jpeg",
     ];
 
     const [current, setCurrent] = useState(0);

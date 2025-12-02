@@ -1,0 +1,54 @@
+.services-section {
+    padding: 60px 0;
+}
+
+.services-title {
+    text-align: center;
+    color: #0074b8;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+/* Tarjeta */
+.service-card {
+    background: #fff;
+    border-radius: 14px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+}
+
+/* Imagen uniforme */
+.service-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* Contenido */
+.service-info {
+    padding: 18px;
+}
+
+.service-info h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.service-info p {
+    margin: 0;
+    color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .service-img {
+        height: 180px;
+    }
+}

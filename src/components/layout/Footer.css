@@ -1,27 +1,97 @@
-footer {
-    background-color: #0B1C32;
+.footer {
+    background: #0B1C32;
     color: #ffffff;
-    padding: 40px 0;
+    padding: 50px 0 20px;
+    font-size: 0.95rem;
 }
 
-footer h5 {
+.footer-title {
     color: #00A1E0;
-    /* Azul claro del logo */
+    font-weight: 700;
     margin-bottom: 15px;
 }
 
-footer p {
-    margin: 0;
-    line-height: 1.6;
+.footer p {
+    margin: 0 0 8px;
 }
 
-footer .phone {
-    color: #FF7A00;
-    /* naranja del logo */
+.icon {
+    margin-right: 8px;
+    color: #F47B20;
+}
+
+/* WhatsApp Link */
+.whatsapp-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #25D366;
     font-weight: 600;
+    text-decoration: none;
 }
 
-footer .schedule {
-    color: #7AB800;
-    /* verde del logo */
+.whatsapp-link:hover {
+    color: #1ab152;
+}
+
+/* Redes sociales */
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.1);
+    color: white;
+    transition: 0.3s ease;
+    font-size: 1.2rem;
+}
+
+.social-links a:hover {
+    background: #0074b8;
+}
+
+/* Menú rápido */
+.menu-list {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-list li {
+    margin-bottom: 6px;
+}
+
+.menu-list a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.menu-list a:hover {
+    color: #00A1E0;
+}
+
+/* Mapa */
+.map-wrapper {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* copyright */
+copyright {
+    opacity: 0.7;
+    font-size: 0.85rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer {
+        text-align: center;
+    }
+
+    .social-links a {
+        margin: 5px;
+    }
 }
