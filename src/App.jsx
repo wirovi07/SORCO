@@ -1,5 +1,3 @@
-
-
 import { Routes, Route } from "react-router-dom";
 
 import Header from "./components/layout/Header";
@@ -9,6 +7,7 @@ import WhatsAppButton from "./components/WhatsAppButton";
 
 // Pages
 import Home from "./pages/Home";
+import About from "./pages/About"; 
 
 function App() {
     return (
@@ -18,8 +17,10 @@ function App() {
             <main style={{ minHeight: "70vh" }}>
                 <Routes>
                     <Route path="/" element={<Home />} />
+                    <Route path="/About" element={<About />} /> 
                 </Routes>
             </main>
+
             <WhatsAppButton />
             <Footer />
         </>

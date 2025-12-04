@@ -50,7 +50,14 @@ export default function Testimonials() {
     return (
         <section className="py-5" style={{ background: "#f9fafc" }}>
             <div className="container">
-                <h2 className="text-center mb-4" style={{ color: "#0074b8" }}>
+                <h2 className="text-center mb-4"
+                    style={{
+                        color: "#0074b8",
+                        textAlign: "center",
+                        fontSize: "2rem",
+                        fontWeight: 800,
+                        marginBottom: "30px",
+                    }}>
                     Testimonios
                 </h2>
 
