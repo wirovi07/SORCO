@@ -36,14 +36,13 @@ export default function CallToAction() {
                     href="https://wa.me/573102460681?text=Hola%2C%20deseo%20agendar%20una%20cita%20con%20SORCO"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn fw-bold px-4 py-2"
+                    className="btn px-4 py-2 fw-bold mt-4"
                     style={{
-                        backgroundColor: "#0074b8",
+                        background: "linear-gradient(90deg, #0074B8, #F47B20)",
                         color: "#fff",
-                        borderRadius: "30px",
-                        fontSize: "1.1rem",
-                        boxShadow: "0 4px 12px rgba(0, 116, 184, 0.4)",
-                        transition: "0.3s ease",
+                        borderRadius: "50px",
+                        fontSize: "1.05rem",
+                        boxShadow: "0 4px 12px rgba(0,0,0,0.15)"
                     }}
                     onMouseEnter={(e) =>
                         (e.target.style.backgroundColor = "#005f94")

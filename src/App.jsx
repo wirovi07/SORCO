@@ -8,6 +8,7 @@ import WhatsAppButton from "./components/WhatsAppButton";
 // Pages
 import Home from "./pages/Home";
 import About from "./pages/About"; 
+import Services from "./pages/Services";
 
 function App() {
     return (
@@ -17,7 +18,8 @@ function App() {
             <main style={{ minHeight: "70vh" }}>
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="/About" element={<About />} /> 
+                    <Route path="/about" element={<About />} /> 
+                    <Route path="/services" element={<Services/>}/>
                 </Routes>
             </main>
 

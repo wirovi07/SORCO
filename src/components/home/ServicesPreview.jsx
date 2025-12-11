@@ -1,11 +1,18 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
+import { useNavigate } from "react-router-dom";
 import "swiper/css";
 import "swiper/css/autoplay";
 import "./ServicesPreview.css";
 
 export default function ServicesPreview() {
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+        navigate("/services");
+    };
+
     const services = [
         {
             img: "/images/services/CconsultasOftamologica.jpg",
@@ -57,7 +64,11 @@ export default function ServicesPreview() {
                 >
                     {services.map((s, i) => (
                         <SwiperSlide key={i}>
-                            <div className="service-card shadow">
+                            <div
+                                className="service-card shadow"
+                                onClick={handleClick}
+                                style={{ cursor: "pointer" }}
+                            >
                                 <img src={s.img} alt={s.title} className="service-img" />
                                 <div className="service-info">
                                     <h5 style={{ color: s.color }}>{s.title}</h5>

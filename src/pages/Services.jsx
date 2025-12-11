@@ -1,8 +1,14 @@
+import React from "react";
+
+// Importar secciones de Services
+import ServiceCard from "../components/services/ServiceCard";
+
 export default function Services() {
     return (
-        <div className="container py-5">
-            <h1 className="text-center mb-4">Servicios</h1>
-            <p className="text-center">Aquí se mostrarán los servicios de la clínica.</p>
-        </div>
+        <>
+            {/* Sección Sericie */}
+            <ServiceCard />
+
+        </>
     );
 }

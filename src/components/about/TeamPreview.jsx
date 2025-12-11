@@ -3,24 +3,24 @@ import { Link } from "react-router-dom"; // Solo si usas React Router
 
 // Puedes sustituir estas imágenes por las reales de tu equipo
 import doctor1 from "/images/team/doctor1.jpg";
-import doctor2 from "/images/team/doctor2.jpg";
-import doctor3 from "/images/team/doctor3.jpg";
+import doctor2 from "/images/team/doctor3.jpg";
+import doctor3 from "/images/team/doctor2.jpg";
 
 export default function TeamPreview() {
     const doctors = [
         {
-            name: "Dr. Juan Pérez",
-            specialty: "Cirujano Oftalmólogo",
+            name: "Dr. Esteban Julio Paba Rubio",
+            specialty: "Oftalmólogo",
             img: doctor1
         },
         {
-            name: "Dra. Mariana Gómez",
+            name: "Dr. Cristian Esteban Paba Rojas",
             specialty: "Especialista en Retina",
             img: doctor2
         },
         {
-            name: "Dr. Carlos Martínez",
-            specialty: "Oftalmólogo General",
+            name: "Dr. Manuel Fernando Buitrago",
+            specialty: "Especialista en Oculoplastia",
             img: doctor3
         }
     ];
@@ -78,7 +78,14 @@ export default function TeamPreview() {
 
                 {/* Botón */}
                 <div className="text-center mt-4">
-                    <a href="/equipo-medico" className="btn btn-primary px-4 py-2">
+                    <a href="/equipo-medico" className="btn px-4 py-2 fw-bold mt-4"
+                        style={{
+                            background: "linear-gradient(90deg, #0074B8, #F47B20)",
+                            color: "#fff",
+                            borderRadius: "50px",
+                            fontSize: "1.05rem",
+                            boxShadow: "0 4px 12px rgba(0,0,0,0.15)"
+                        }}>
                         Conocer Equipo Completo
                     </a>
                 </div>
