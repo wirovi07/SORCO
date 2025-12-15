@@ -1,0 +1,230 @@
+/* ============================
+   ESTILO PREMIUM PARA EL TEAM
+   ============================ */
+
+/* ---- GLOBAL ---- */
+:root {
+    --primary: #0074B8;
+    --secondary: #F47B20;
+    --text-dark: #333;
+    --text-muted: #666;
+    --card-radius: 16px;
+}
+
+/* ---- CONTENEDOR TEAM ---- */
+.team-container {
+    padding: 60px 20px;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.team-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 50px;
+}
+
+/* ---- GRID ---- */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 28px;
+}
+
+/* ============================
+    DOCTOR CARD
+============================ */
+.doctor-card {
+    border-radius: var(--card-radius);
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    transition: 0.35s;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Imagen */
+.doctor-card img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+/* Efecto hover premium */
+.doctor-card:hover img {
+    transform: scale(1.08);
+    filter: brightness(1.15);
+}
+
+.doctor-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.25);
+}
+
+/* Contenido */
+.doctor-info {
+    padding: 18px;
+}
+
+.doctor-name {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    text-align: center;  /* ← centra el nombre */
+    width: 100%;         /* asegura que el texto ocupe toda la card */
+    display: block;      /* por si estaba inline */
+}
+
+.doctor-specialty {
+    color: var(--primary);
+    font-weight: 500;
+}
+
+/* Botón */
+.doctor-button {
+    margin: 12px auto 0 auto; /* ← centra el botón */
+    display: block;          /* ← permite el centrado */
+    padding: 10px 24px;
+    border-radius: 50px;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.doctor-button:hover {
+    transform: scale(1.06);
+}
+
+/* ============================
+    MODAL PREMIUM
+============================ */
+.doctor-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.65);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    z-index: 999999;
+    animation: fadeIn 0.35s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.doctor-modal {
+    background: #fff;
+    border-radius: 22px;
+    max-width: 520px;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    animation: modalUp 0.35s ease;
+}
+
+@keyframes modalUp {
+    from {
+        transform: translateY(25px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.modal-img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+
+.modal-content {
+    padding: 25px;
+}
+
+.modal-name {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--primary);
+}
+
+.modal-specialty {
+    font-size: 1.15rem;
+    color: var(--secondary);
+    margin-bottom: 12px;
+}
+
+.modal-close-btn {
+    margin-top: 25px;
+    width: 100%;
+    padding: 12px;
+    border-radius: 50px;
+    border: none;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.modal-close-btn:hover {
+    transform: scale(1.05);
+}
+
+
+/* ============================
+MOBILE OPTIMIZATION
+============================ */
+@media (max-width: 600px) {
+
+    .team-title {
+        font-size: 1.9rem;
+        margin-bottom: 35px;
+    }
+
+    .doctor-card img {
+        height: 260px;
+    }
+
+    .modal-img {
+        height: 250px;
+    }
+
+    .modal-content {
+        padding: 18px;
+    }
+
+    .modal-name {
+        font-size: 1.5rem;
+    }
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2.5rem;
+    padding: 2rem 1rem;
+    max-width: 1400px;
+    margin: 0 auto; 
+}

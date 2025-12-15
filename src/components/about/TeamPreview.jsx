@@ -78,7 +78,7 @@ export default function TeamPreview() {
 
                 {/* Botón */}
                 <div className="text-center mt-4">
-                    <a href="/equipo-medico" className="btn px-4 py-2 fw-bold mt-4"
+                    <a href="/team" className="btn px-4 py-2 fw-bold mt-4"
                         style={{
                             background: "linear-gradient(90deg, #0074B8, #F47B20)",
                             color: "#fff",
