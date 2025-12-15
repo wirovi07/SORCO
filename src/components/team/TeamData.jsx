@@ -12,7 +12,7 @@ export const doctors = [
     {
         name: "Cristian Paba Rojas",
         role: "Especialista en Retinología",
-        img: "/images/doctors/CristianPaba.jpg",
+        img: "/images/doctors/cristian.png",
         university: "Universidad Javeriana",
         experience: "Mas de 10 años de experiencia en manejo de patologías retinianas, incluyendo retinopatía diabética, desprendimiento de retina y cirugía vítreo-retiniana.",
         description: "Destacado por su manejo avanzado de pacientes con enfermedades de retina, apoyado en equipos de diagnóstico de alta tecnología.",

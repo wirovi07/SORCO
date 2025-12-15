@@ -13,6 +13,7 @@ export default function Footer() {
                     <div className="col-md-3 col-sm-6 mb-4">
                         <h5 className="footer-title">Dirección</h5>
                         <p><FaMapMarkerAlt className="icon" /> Cl. 17 #5-71<br />Aguachica, Cesar</p>
+                        <p><FaMapMarkerAlt className="icon" /> Cra. 12 #9-74 local 214<br />Ocaña, Norte de Santander</p>
                     </div>
 
                     {/* Contacto */}
@@ -20,6 +21,7 @@ export default function Footer() {
                         <h5 className="footer-title">Contacto</h5>
                         <p><FaPhoneAlt className="icon" /> 310 246 06 81</p>
                         <p><FaPhoneAlt className="icon" /> 314 295 63 03</p>
+                        <p><FaPhoneAlt className="icon" /> 302 234 67 75</p>
 
                         <a 
                             href="https://wa.me/573102460681" 

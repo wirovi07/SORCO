@@ -26,7 +26,7 @@ export default function Header() {
                             <a href="/about">Nosotros</a>
                             <a href="/services">Servicios</a>
                             <a href="/team">Equipo Médico</a>
-                            <a href="/contact">Contacto</a>
+                            <a href="/sedeocana">Sede Ocaña</a>
                         </nav>
 
                         <button
@@ -48,7 +48,7 @@ export default function Header() {
                 <a href="/about" onClick={() => setMenuOpen(false)}>Nosotros</a>
                 <a href="/services" onClick={() => setMenuOpen(false)}>Servicios</a>
                 <a href="/team" onClick={() => setMenuOpen(false)}>Equipo Médico</a>
-                <a href="/contact" onClick={() => setMenuOpen(false)}>Contacto</a>
+                <a href="/sedeocana" onClick={() => setMenuOpen(false)}>Sede Ocaña</a>
             </div>
         </>
     );

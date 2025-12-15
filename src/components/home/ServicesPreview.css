@@ -51,4 +51,8 @@
     .service-img {
         height: 180px;
     }
+
+    .services-section {
+        padding: 20px 0;
+    }
 }

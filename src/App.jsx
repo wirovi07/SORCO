@@ -9,6 +9,8 @@ import WhatsAppButton from "./components/WhatsAppButton";
 import Home from "./pages/Home";
 import About from "./pages/About"; 
 import Services from "./pages/Services";
+import Team from "./pages/Team";
+import SedeOcana from "./pages/SedeOcana";
 
 function App() {
     return (
@@ -20,6 +22,8 @@ function App() {
                     <Route path="/" element={<Home />} />
                     <Route path="/about" element={<About />} /> 
                     <Route path="/services" element={<Services/>}/>
+                    <Route path="/team" element={<Team/>}/>
+                    <Route path="/sedeocana" element={<SedeOcana />} />
                 </Routes>
             </main>
 
