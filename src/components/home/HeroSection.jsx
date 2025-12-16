@@ -32,7 +32,8 @@ export default function HeroSection() {
                     <h1 className="fw-bold">Sociedad Regional de Cirugía Ocular</h1>
                     <p className="lead">Cuidamos tu visión con excelencia y compromiso</p>
 
-                    <a href="/contact" className="btn btn-light px-4 mt-3 fw-bold">
+                    <a href="https://wa.me/573102460681?text=Hola%2C%20deseo%20agendar%20una%20cita%20con%20SORCO" target="_blank"
+                        rel="noopener noreferrer" className="btn btn-light px-4 mt-3 fw-bold">
                         Agendar Cita
                     </a>
                 </div>
